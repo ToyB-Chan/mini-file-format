@@ -94,6 +94,8 @@ hexValue = 0xFA8
 
 [MySection.MySubsection.AnotherSubsection]
 binValue = 0b0010010
+
+# Another comment
 anotherDec = 1_000_375
 ```
 
