@@ -13,10 +13,10 @@ Ends with `.mini` i.e. `config.mini`.
 - Keys within (sub-) sections use `key = value` syntax.
 - Key and (sub-) section names may only contain `a-z`, `A-Z`, `0-9`, and `_`.
 - Empty keys (i.e., keys without values) are not allowed.
-- Spaces outside of strings are ignored.
+- Spaces are ignored as long as they don't split up names or values.
 - Empty lines are ignored
 - Comments are denoted by `#` and may only appear on separate lines.
-- Cases are sensitive except where otherwise noted.
+- Cases are sensitive, except where otherwise noted.
 
 ## Supported Data Types
 
@@ -24,9 +24,9 @@ The format supports the following data types:
 
 ### Integer
 - Defined as a sequence of digits (`0-9`).
-- Can be suffixed with `x` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
-- Can be suffixed with `b` to be interpreted as binary (`0-1`).
-- Can contain underscores (`_`) for better readability.
+- May be suffixed with `x` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
+- May be suffixed with `b` to be interpreted as binary (`0-1`).
+- May contain underscores (`_`) for better readability.
 - Example: `value = 5`
 - Example: `hexValue = FA8x`
 - Example: `binValue = 0010010b`
@@ -40,7 +40,7 @@ The format supports the following data types:
   - `\n` for a newline
   - `\t` for a tab
   - `\\` for a backslash
-- Strings can be empty.
+- Strings may be empty.
 - Example: `string = "My string`
 - Example: `string = "Line 1\nLine 2"`
 - Example: `string = "Tab\tSeparated"`
@@ -49,11 +49,11 @@ The format supports the following data types:
 - Example: `emptyString = ""`
 
 ### Array
-- Arrays are enclosed in square brackets (`[]`) and contain comma-separated values.
+- Arrays are enclosed in square brackets (`[]`) and contain comma-separated values. A space may follow after a comma.
 - Arrays may only contain one datatype at a time.
 - Arrays may be of any positive dimension.
 - Arrays may be of any positive length.
-- Arrays can be empty.
+- Arrays may be empty.
 - Example: `array = [5, 6, 10]`
 - Example: `array2d = [[5, 8], [9, 7], [23, 47]]`
 - Example: `array2d = [[9], [50, 3], [54, 12, 46, 37]]`
