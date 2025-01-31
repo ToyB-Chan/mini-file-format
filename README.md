@@ -43,6 +43,7 @@ The format supports the following data types:
   - `\"` for a double quote (`"`)
   - `\n` for a newline
   - `\t` for a tab
+  - `\r` for carriage return
   - `\\` for a backslash
 - Strings may be empty.
 - Example: `string = "My string"`
