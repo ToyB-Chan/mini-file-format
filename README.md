@@ -112,6 +112,7 @@ my-value = 5                 | Invalid character in key.
 [MyOtherSection.Subsection]  | "MyOtherSection" has not been defined before.
 myValue = 16 # a comment     | Inline comments are not allowed.
 array2d = [[9], [50, 3]]     | Lengths of the arrays in the same dimension don't match.
+abc =                        | Keys may not contain empty values
 
 [MyOtherSection]
 myArray = [                  | Values may not span over multiple lines.
