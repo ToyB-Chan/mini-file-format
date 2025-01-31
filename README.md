@@ -46,9 +46,11 @@ The format supports the following data types:
 - Arrays are enclosed in square brackets (`[]`) and contain comma-separated values.
 - Arrays may only contain one datatype.
 - Arrays may be of any positive dimension.
+- Arrays may be of any length.
 - Arrays can be empty
 - Example: `array = [5, 6, 10]`
 - Example: `array2d = [[5, 8], [9, 7], [23, 47]]`
+- Example: `array2d = [[9], [50, 3], [54, 12, 46, 37]]`
 - Example: `emptyArray = []`
 
 ### Boolean
