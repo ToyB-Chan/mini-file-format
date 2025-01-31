@@ -24,12 +24,12 @@ The format supports the following data types:
 
 ### Integer
 - Defined as a sequence of digits (`0-9`).
-- Can be prefixed with `0x` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
-- Can be prefixed with `0b` to be interpreted as binary (`0-1`).
+- Can be suffixed with `x` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
+- Can be suffixed with `b` to be interpreted as binary (`0-1`).
 - Can contain underscores (`_`) for better readability.
 - Example: `value = 5`
-- Example: `hexValue = 0xFA8`
-- Example: `binValue = 0b0010010`
+- Example: `hexValue = FA8x`
+- Example: `binValue = 0010010b`
 - Example: `anotherDec = 1_000_375`
 
 ### String
