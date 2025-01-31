@@ -14,9 +14,11 @@ Ends with `.mini` i.e. `config.mini`.
 - Key and (sub-) section names may only contain `a-z`, `A-Z`, `0-9`, and `_`.
 - Empty keys (i.e., keys without values) are not allowed.
 - Spaces are ignored as long as they don't split up names or values.
+- Spaces are not allowed during (sub-) section declaration.
 - Empty lines are ignored.
 - Comments are denoted by `#` and may only appear on separate lines.
-- Cases are sensitive, except where otherwise noted.
+- Cases are sensitive (for both names and values), except where otherwise noted.
+- The underlying size of any type is application specific.
 
 ## Supported Data Types
 
