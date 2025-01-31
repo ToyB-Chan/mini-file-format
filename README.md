@@ -85,10 +85,10 @@ myBool = false
 [MySection.MySubsection]
 myFloat = 1.065f
 myFloat2 = 1e18f
-hexValue = 0xFA8
+hexValue = FA8x
 
 [MySection.MySubsection.AnotherSubsection]
-binValue = 0b0010010
+binValue = 0010010b
 
 # Another comment
 anotherDec = 1_000_375
