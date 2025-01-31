@@ -51,7 +51,7 @@ The format supports the following data types:
 
 ### Array
 - Arrays are enclosed in square brackets (`[]`) and contain comma-separated values.
-- Arrays may only contain one datatype.
+- Arrays may only contain one datatype at a time.
 - Arrays may be of any positive dimension.
 - Arrays may be of any positive length.
 - Arrays can be empty.
@@ -95,3 +95,16 @@ binValue = 0b0010010
 anotherDec = 1_000_375
 ```
 
+## What not to do
+```text
+[My-Section]                 | Invalid character in section name.
+myFloat = 1.5                | Does not end with f.
+myBool = True                | Should not be capitalized.
+myArray = [5, "Hi"]          | Arrays can only contain one datatype at a time.
+myArray2 = [[5, 6], 1]       | Technically same as above, dimensions must match across all arrays.
+myString = 'Hello'           | Strings may only be encapsulated by ".
+my-value = 5                 | Invalid character in key.
+
+[MyOtherSection.Subsection]  | "MyOtherSection" is not defined
+myValue = 16 # comment       | Inline comments are not allowed.
+```
