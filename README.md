@@ -16,7 +16,7 @@ Ends with `.mini` i.e. `config.mini`.
 - Spaces outside of strings are ignored.
 - Empty lines are ignored
 - Comments are denoted by `#` and may only appear on separate lines.
-- Except where otherwise noted, cases are sensitive.
+- Cases are sensitive except where otherwise noted.
 
 ## Supported Data Types
 
