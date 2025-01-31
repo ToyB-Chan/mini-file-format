@@ -70,8 +70,9 @@ The format supports the following data types:
 - Floats may also be whole numbers without a decimal point.
 - Example: `anotherValue = 1.065f`
 - Example: `thisToo = 1e18f`
-- Example: `scientificFloat = 1.534e3f`
+- Example: `scientificFloat = 1.534E3f`
 - Example: `wholeFloat = 1f`
+- Example: `wholeFloat = 5.f`
 
 ## Example Structure
 ```text
