@@ -19,6 +19,7 @@ Ends with `.mini` i.e. `config.mini`.
 - Comments are denoted by `#` and may only appear on separate lines.
 - Cases are sensitive (for both names and values), except where otherwise noted.
 - The underlying size of any type is application specific.
+- The parsing behavior of an illformed file is undefined.
 
 ## Supported Data Types
 
@@ -43,7 +44,7 @@ The format supports the following data types:
   - `\t` for a tab
   - `\\` for a backslash
 - Strings may be empty.
-- Example: `string = "My string`
+- Example: `string = "My string"`
 - Example: `string = "Line 1\nLine 2"`
 - Example: `string = "Tab\tSeparated"`
 - Example: `string = "My \"escaped\" String"`
