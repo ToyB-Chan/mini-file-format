@@ -32,6 +32,7 @@ The format supports the following data types:
   - `\"` for a double quote (`"`)
   - `\n` for a newline
   - `\t` for a tab
+  - `\\` for a backslash
 - Example: `string = "Line 1\nLine 2"`
 - Example: `string = "Tab\tSeparated"`
 - Example: `string = "My \"escaped\" String"`
@@ -68,19 +69,19 @@ The format supports the following data types:
 
 ## Example Structure
 ```text
-[Section]
-integer = 5
-string = "My String"
-array = [5, 6, 10]
+[MySection]
+myInteger = 5
+myString = "My String"
+myArray = [5, 6, 10]
 myBool = false
 
 # A comment
-[Section.Subsection]
-float = 1.065f
-float2 = 1e18f
+[MySection.MySubsection]
+myFloat = 1.065f
+myFloat2 = 1e18f
 hexValue = 0xFA8
 
-[Section.Subsection.Subsection]
+[MySection.MySubsection.AnotherSubsection]
 binValue = 0b0010010
 anotherDec = 1_000_375
 ```
