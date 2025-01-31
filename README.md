@@ -35,17 +35,24 @@ The format supports the following data types:
   - `\n` for a newline
   - `\t` for a tab
   - `\\` for a backslash
+- Strings can be empty.
+- Example: `string = "My string`
 - Example: `string = "Line 1\nLine 2"`
 - Example: `string = "Tab\tSeparated"`
 - Example: `string = "My \"escaped\" String"`
+- Example: `emptyString = ""`
 
 ### Array
 - Arrays are enclosed in square brackets (`[]`) and contain comma-separated values.
 - Arrays may only contain one datatype.
+- Arrays may be of any positive dimension.
+- Arrays can be empty
 - Example: `array = [5, 6, 10]`
+- Example: `array2d = [[5, 8], [9, 7], [23, 47]]`
+- Example: `emptyArray = []`
 
 ### Boolean
-- Boolean values are represented as `true` or `false`.
+- Boolean values are represented as either `true` or `false`.
 - Example: `myBool = false`
 
 ### Floating-Point Numbers
