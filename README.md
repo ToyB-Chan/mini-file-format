@@ -28,11 +28,11 @@ The format supports the following data types:
 
 ### Integer
 - Defined as a sequence of digits (`0-9`).
-- May be suffixed with `x` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
+- May be suffixed with `h` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
 - May be suffixed with `b` to be interpreted as binary (`0-1`).
 - May contain underscores (`_`) for better readability.
 - Example: `value = 5`
-- Example: `hexValue = FA8x`
+- Example: `hexValue = FA8h`
 - Example: `binValue = 0010010b`
 - Example: `anotherDec = 1_000_375`
 
@@ -91,7 +91,7 @@ myBool = false
 [MySection.MySubsection]
 myFloat = 1.065f
 myFloat2 = 1e18f
-hexValue = FA8x
+hexValue = FA8h
 
 [MySection.MySubsection.AnotherSubsection]
 binValue = 0010010b
