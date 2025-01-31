@@ -11,6 +11,7 @@ Ends with `.mini` i.e. `config.mini`.
 - All (sub-) sections may only be defined once.
 - (Sub-) sections can be empty.
 - Keys within (sub-) sections use `key = value` syntax.
+- Values may never reach over multiple lines.
 - Key and (sub-) section names may only contain `a-z`, `A-Z`, `0-9`, and `_`.
 - Empty keys (i.e., keys without values) are not allowed.
 - Spaces are ignored as long as they don't split up names or values.
@@ -107,6 +108,12 @@ myArray2 = [[5, 6], 1]       | Technically same as above, dimensions must match 
 myString = 'Hello'           | Strings may only be encapsulated by ".
 my-value = 5                 | Invalid character in key.
 
-[MyOtherSection.Subsection]  | "MyOtherSection" is not defined.
+[MyOtherSection.Subsection]  | "MyOtherSection" has not been defined before.
 myValue = 16 # a comment     | Inline comments are not allowed.
+
+[MyOtherSection]
+myArray = [                  | Values may not span over multiple lines.
+            [5, 7],
+            [9. 2]
+          ]
 ```
