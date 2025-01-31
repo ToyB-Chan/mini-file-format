@@ -114,6 +114,6 @@ myValue = 16 # a comment     | Inline comments are not allowed.
 [MyOtherSection]
 myArray = [                  | Values may not span over multiple lines.
             [5, 7],
-            [9. 2]
+            [9, 2]
           ]
 ```
