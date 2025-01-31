@@ -1,5 +1,3 @@
-
-
 # mini-file-format
 
 Minimalized ini format with concrete format rules. Meant to be easily read and easily parsed.
@@ -18,6 +16,7 @@ Ends with `.mini` i.e. `config.mini`.
 - Spaces outside of strings are ignored.
 - Empty lines are ignored
 - Comments are denoted by `#` and may only appear on separate lines.
+- Except where otherwise noted, cases are sensitive.
 
 ## Supported Data Types
 
@@ -105,6 +104,6 @@ myArray2 = [[5, 6], 1]       | Technically same as above, dimensions must match 
 myString = 'Hello'           | Strings may only be encapsulated by ".
 my-value = 5                 | Invalid character in key.
 
-[MyOtherSection.Subsection]  | "MyOtherSection" is not defined
+[MyOtherSection.Subsection]  | "MyOtherSection" is not defined.
 myValue = 16 # comment       | Inline comments are not allowed.
 ```
