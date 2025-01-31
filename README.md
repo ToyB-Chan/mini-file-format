@@ -105,5 +105,5 @@ myString = 'Hello'           | Strings may only be encapsulated by ".
 my-value = 5                 | Invalid character in key.
 
 [MyOtherSection.Subsection]  | "MyOtherSection" is not defined.
-myValue = 16 # comment       | Inline comments are not allowed.
+myValue = 16 # a comment     | Inline comments are not allowed.
 ```
