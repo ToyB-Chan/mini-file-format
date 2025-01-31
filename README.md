@@ -114,7 +114,7 @@ myValue = 16 # a comment     | Inline comments are not allowed.
 array2d = [[9], [50, 3]]     | Lengths of the arrays in the same dimension don't match.
 abc =                        | Keys may not contain empty values
 
-[MyOtherSection]
+[ MyOtherSection]            | Spaces are not allowed during section declaration.
 myArray = [                  | Values may not span over multiple lines.
             [5, 7],
             [9, 2]
