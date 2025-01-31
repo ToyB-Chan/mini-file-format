@@ -25,7 +25,13 @@ The format supports the following data types:
 
 ### Integer
 - Defined as a sequence of digits (`0-9`).
+- Can be prefixed with `0x` to be interpreted as hexadecimal (`0-9`, `a-f`, `A-F`).
+- Can be prefixed with `0b` to be interpreted as binary (`0-1`).
+- Can contain underscores (`_`) for better readability.
 - Example: `value = 5`
+- Example: `hexValue = 0xFA8`
+- Example: `binValue = 0b0010010`
+- Example: `anotherDec = 1_000_375`
 
 ### String
 - Strings are enclosed in double quotes (`""`).
@@ -40,6 +46,7 @@ The format supports the following data types:
 - Example: `string = "Line 1\nLine 2"`
 - Example: `string = "Tab\tSeparated"`
 - Example: `string = "My \"escaped\" String"`
+- Example: `string = "My string with a \\ <- backslash"`
 - Example: `emptyString = ""`
 
 ### Array
@@ -58,25 +65,13 @@ The format supports the following data types:
 - Example: `myBool = false`
 
 ### Floating-Point Numbers
-- Floating-point numbers use `.` for decimal notation or `e` for scientific notation.
+- Floating-point numbers use `.` for decimal notation or `e`/`E` for scientific notation.
 - Floats always end with `f`.
 - Floats may also be whole numbers without a decimal point.
 - Example: `anotherValue = 1.065f`
 - Example: `thisToo = 1e18f`
 - Example: `scientificFloat = 1.534e3f`
 - Example: `wholeFloat = 1f`
-
-### Hexadecimal Numbers
-- Hexadecimal numbers are prefixed with `0x`.
-- Example: `hexValue = 0xFA8`
-
-### Binary Numbers
-- Binary numbers are prefixed with `0b`.
-- Example: `binValue = 0b0010010`
-
-### Underscore in Numbers
-- Numbers can contain underscores (`_`) for readability.
-- Example: `anotherDec = 1_000_375`
 
 ## Example Structure
 ```text
