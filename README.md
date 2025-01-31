@@ -9,10 +9,10 @@ Ends with `.mini` i.e. `config.mini`.
 
 - Sections are denoted by square brackets (`[Section]`).
 - Subsections are nested within sections using dot notation (`[Section.Subsection]`).
-- All subsections must be explicitly defined before use.
-- Subsections can be empty.
+- All (sub-) sections must be explicitly defined before use.
+- (Sub-) sections can be empty.
 - Keys within sections or subsections use `key = value` syntax.
-- Key names may only contain `a-z`, `A-Z`, and `0-9`.
+- Key- and section-names may only contain `a-z`, `A-Z`, and `0-9`.
 - Empty keys (i.e., keys without values) are not allowed.
 - Spaces outside of strings are ignored.
 - Comments are denoted by `#` and may only appear on separate lines.
