@@ -14,7 +14,7 @@ Ends with `.mini` i.e. `config.mini`.
 - Key and (sub-) section names may only contain `a-z`, `A-Z`, `0-9`, and `_`.
 - Empty keys (i.e., keys without values) are not allowed.
 - Spaces are ignored as long as they don't split up names or values.
-- Empty lines are ignored
+- Empty lines are ignored.
 - Comments are denoted by `#` and may only appear on separate lines.
 - Cases are sensitive, except where otherwise noted.
 
