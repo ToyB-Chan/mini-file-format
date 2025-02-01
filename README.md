@@ -10,7 +10,7 @@ Ends with `.mini` i.e. `config.mini`.
 - All (sub-) sections must be explicitly defined before used elsewhere.
 - All (sub-) sections may only be defined once.
 - (Sub-) sections can be empty.
-- Keys within (sub-) sections use `key = value` syntax.
+- Keys within (sub-) sections use `key = value` syntax and are seperated by new-lines.
 - Key and (sub-) section names may only contain `a-z`, `A-Z`, `0-9`, and `_`.
 - Values may never reach over multiple lines.
 - Empty keys (i.e., keys without values) are not allowed.
