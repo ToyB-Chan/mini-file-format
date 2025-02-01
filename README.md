@@ -14,8 +14,8 @@ Ends with `.mini` i.e. `config.mini`.
 - Key and (sub-) section names may only contain `a-z`, `A-Z`, `0-9`, and `_`.
 - Values may never reach over multiple lines.
 - Empty keys (i.e., keys without values) are not allowed.
-- Spaces are ignored as long as they don't split up names or values.
-- Spaces are not allowed during (sub-) section declaration.
+- Whitespaces are ignored as long as they don't split up names or values.
+- Whitespaces are not allowed during (sub-) section declaration.
 - Empty lines are ignored.
 - Comments are denoted by `#` and may only appear on separate lines.
 - Cases are sensitive (for both names and values), except where otherwise noted.
@@ -54,7 +54,8 @@ The format supports the following data types:
 - Example: `emptyString = ""`
 
 ### Array
-- Arrays are enclosed in square brackets (`[]`) and contain comma-separated values. A space may follow after a comma.
+- Arrays are enclosed in square brackets (`[]`) and contain comma-separated values.
+- Arrays may contain whitespaces, as long as they don't split up values.
 - Arrays may only contain one datatype at a time.
 - Arrays may be of any positive dimension.
 - Arrays may be of any positive length.
@@ -115,7 +116,7 @@ myValue = 16 # a comment     | Inline comments are not allowed.
 array2d = [[9], [50, 3]]     | Lengths of the arrays in the same dimension don't match.
 abc =                        | Keys may not contain empty values
 
-[ MyOtherSection]            | Spaces are not allowed during section declaration.
+[ MyOtherSection]            | Whitespaces are not allowed during section declaration.
 myArray = [                  | Values may not span over multiple lines.
             [5, 7],
             [9, 2]
