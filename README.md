@@ -56,6 +56,7 @@ The format supports the following data types:
 ### Array
 - Arrays are enclosed in square brackets (`[]`) and contain comma-separated values.
 - Arrays may contain whitespaces, as long as they don't split up values.
+- Arrays may not end on a comma.
 - Arrays may only contain one datatype at a time.
 - Arrays may be of any positive dimension.
 - Arrays may be of any positive length.
@@ -103,16 +104,17 @@ anotherDec = 1_000_375
 ## What not to do
 ```text
 [My-Section]                 | Invalid character in section name.
-myFloat = 1.5                | Does not end with f.
+myFloat = 1.5                | Should always end with f.
 myBool = True                | Should not be capitalized.
-myArray = [5, "Hi"]          | Arrays can only contain one datatype at a time.
-myArray2 = [[5, 6], 1]       | Technically same as above, dimensions must match across all arrays.
+myArray = [5, "Hi"]          | Arrays may only contain one datatype at a time.
+myArray2 = [[5, 6], 1]       | Dimensions must match across all arrays (technically same as above).
 myString = 'Hello'           | Strings may only be encapsulated by ".
 my-value = 5                 | Invalid character in key.
 
 [MyOtherSection.Subsection]  | "MyOtherSection" has not been defined before.
 myValue = 16 # a comment     | Inline comments are not allowed.
-abc =                        | Keys may not contain empty values
+myArray = [5, 9,]            | Arrays may not end on a comma.
+abc =                        | Keys may not contain empty values-
 
 [ MyOtherSection]            | Whitespaces are not allowed during section declaration.
 myArray = [                  | Values may not span over multiple lines.
