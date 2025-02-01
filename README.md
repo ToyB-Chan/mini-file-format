@@ -59,11 +59,10 @@ The format supports the following data types:
 - Arrays may only contain one datatype at a time.
 - Arrays may be of any positive dimension.
 - Arrays may be of any positive length.
-- Arrays must be consistent in length within each dimension.
 - Arrays may be empty.
 - Example: `array = [5, 6, 10]`
 - Example: `array2d = [[5, 8], [9, 7], [23, 47]]`
-- Example: `array3d = [[[5, 8], [9, 7], [8, 1]], [[9, 1], [1, 4], [7, 6]]]`
+- Example: `array2d = [[9], [50, 3]]`
 - Example: `emptyArray = []`
 
 ### Boolean
@@ -113,7 +112,6 @@ my-value = 5                 | Invalid character in key.
 
 [MyOtherSection.Subsection]  | "MyOtherSection" has not been defined before.
 myValue = 16 # a comment     | Inline comments are not allowed.
-array2d = [[9], [50, 3]]     | Lengths of the arrays in the same dimension don't match.
 abc =                        | Keys may not contain empty values
 
 [ MyOtherSection]            | Whitespaces are not allowed during section declaration.
