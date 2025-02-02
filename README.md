@@ -80,6 +80,24 @@ The format supports the following data types:
 - Example: `wholeFloat = 1f`
 - Example: `wholeFloat = 5.f`
 
+### Array of Subsections
+Arrays of subsections are implicty realizable by naming subsections, and do not need specific parsing rules.
+We recommend using something alike the following structure:
+```text
+[Database]
+Version = 1
+
+[Database.Persons]
+[Database.Persons.0]
+Name = John Smith
+Age = 36
+
+[Database.Persons.1]
+Name = Emily Johnson
+Age = 24
+```
+As mentioned above, it is to be handled like any other subsection - that means not starting at index 0 nor having discontinuous indicies make the file illformed.
+
 ## Example Structure
 ```text
 [MySection]
