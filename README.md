@@ -4,9 +4,9 @@ Minimalized ini format with concrete format rules. Meant to be easily read and e
 Ends with `.mini` i.e. `config.mini`.
 
 ## Implementations
-| Name | Language | Serialize | Deserialize | Notes|
-|------|----------|-----------|-------------|------|
-[minipp](https://github.com/mariiaan/minipp) | C++14 | Yes | Yes | Header Only
+| Name | Language | Serialize | Deserialize | License | Notes|
+|------|----------|-----------|-------------|---------|------|
+[minipp](https://github.com/mariiaan/minipp) | C++14 | Yes | Yes | MIT | Header Only
 
 # Format Details
 The `.mini` format is designed to be simple, easy to read, and easy to parse. It has a strict but straightforward structure that keeps things consistent while staying lightweight. 
