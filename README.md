@@ -96,7 +96,7 @@ Age = 36
 Name = Emily Johnson
 Age = 24
 ```
-As mentioned above, it is to be handled like any other subsection - that means not starting at index 0 nor having discontinuous indicies make the file illformed.
+As mentioned above, it is to be handled like any other subsection - that means not starting at index 0 or having discontinuous indicies do _not_ make the file illformed.
 
 ## Example Structure
 ```text
