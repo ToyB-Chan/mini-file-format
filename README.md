@@ -89,11 +89,11 @@ Version = 1
 
 [Database.Persons]
 [Database.Persons.0]
-Name = John Smith
+Name = "John Smith"
 Age = 36
 
 [Database.Persons.1]
-Name = Emily Johnson
+Name = "Emily Johnson"
 Age = 24
 ```
 As mentioned above, it is to be handled like any other subsection - that means not starting at index 0 or having discontinuous indicies do _not_ make the file illformed.
