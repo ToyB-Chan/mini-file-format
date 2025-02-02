@@ -81,7 +81,7 @@ The format supports the following data types:
 - Example: `wholeFloat = 5.f`
 
 ### Array of Subsections
-Arrays of subsections are implicty realizable by naming subsections, and do not need specific parsing rules.
+Arrays of subsections are implicty realizable by naming subsections and do not need specific parsing rules.
 We recommend using something alike the following structure:
 ```text
 [Database]
