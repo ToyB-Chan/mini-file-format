@@ -3,6 +3,17 @@
 Minimalized ini format with concrete format rules. Meant to be easily read and easily parsed.
 Ends with `.mini` i.e. `config.mini`.
 
+## Implementations
+| Name | Language | Serialize | Deserialize | Notes|
+|------|----------|-----------|-------------|------|
+[minipp](https://github.com/mariiaan/minipp) | C++14 | Yes | Yes | Header Only
+
+# Format Details
+The `.mini` format is designed to be simple, easy to read, and easy to parse. It has a strict but straightforward structure that keeps things consistent while staying lightweight. 
+Whether you're using it for configuration files, data storage, or serialization, the goal is to make sure both humans and programs can understand it with minimal effort.
+
+Below are the concrete rules governing sections, keys, values, and supported data types.
+
 ## Sections and Keys
 
 - Sections are denoted by square brackets (`[Section]`).
