@@ -7,6 +7,7 @@ Ends with `.mini` i.e. `config.mini`.
 | Name | Language | Serialize | Deserialize | License | Notes|
 |------|----------|-----------|-------------|---------|------|
 [minipp](https://github.com/mariiaan/minipp) | C++14 | Yes | Yes | MIT | Header Only
+[MiniSharp](https://github.com/mariiaan/MiniSharp) | .NET 6.0 | Yes | Yes | MIT | Supports Reflection |
 
 # Format Details
 The `.mini` format is designed to be simple, easy to read, and easy to parse. It has a strict but straightforward structure that keeps things consistent while staying lightweight. 
