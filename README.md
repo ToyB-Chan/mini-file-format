@@ -70,12 +70,10 @@ The format supports the following data types:
 - Arrays may contain whitespaces, as long as they don't split up values.
 - Arrays may not end on a comma.
 - Arrays may only contain one datatype at a time.
-- Arrays may be of any positive dimension.
+- Arrays may only have one dimenstion.
 - Arrays may be of any positive length.
 - Arrays may be empty.
 - Example: `array = [5, 6, 10]`
-- Example: `array2d = [[5, 8], [9, 7], [23, 47]]`
-- Example: `array2d = [[9], [50, 3]]`
 - Example: `emptyArray = []`
 
 ### Boolean
@@ -137,7 +135,7 @@ anotherDec = 1_000_375
 myFloat = 1.5                | Should always end with f.
 myBool = True                | Should not be capitalized.
 myArray = [5, "Hi"]          | Arrays may only contain one datatype at a time.
-myArray2 = [[5, 6], 1]       | Dimensions must match across all arrays (technically same as above).
+myArray2 = [[5, 6], 1]       | Arrays may only have one dimension.
 myString = 'Hello'           | Strings may only be encapsulated by ".
 my-value = 5                 | Invalid character in key.
 
